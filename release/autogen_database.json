@@ -1,6 +1,77 @@
 {
   "packages": [
     {
+      "titleB64": "Q2FyIHBoeXNpY3MgLSBBQ1A=",
+      "descriptionB64": "QWR2YW5jZWQgY2FyIHBoeXNpY3M=",
+      "tags": "acp",
+      "version": 1,
+      "repositoryURL": "https://github.com/ITsMagic-Software/Package-ACP",
+      "isTemplate": true,
+      "date": "02/02/2026",
+      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
+      "images": [
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
+      ],
+      "id": "7df7230e-fd01-4eb1-9651-06075ebfbd0e",
+      "userName": "ITsMagic 22"
+    },
+    {
+      "titleB64": "Rmlyc3QgcGVyc29uIHBsYXllciBwcm9qZWN0IChBRlBQKQ==",
+      "descriptionB64": "T2ZmaWNpYWwgYWR2YW5jZWQgZmlyc3QgcGVyc29uIHBsYXllcgoKSXQgaXMgYSBmdWxseSBjb25maWd1cmVkIGFuZCBmdW5jdGlvbmFsIHBsYXllci4KCkl0IGhhcyBhIGNvbnRyb2wgaW50ZXJmYWNlLgpBZHZhbmNlZCBmb290c3RlcCBzb3VuZHMgd2l0aCBmcmVxdWVuY3ksIHBpdGNoIGFuZCB2b2x1bWUgdmFyaWF0aW9uIGJhc2VkIG9uIHNwZWVkIGFuZCBzY2VuZSBzZXR0aW5ncy4KRGlmZmVyZW50IHR5cGVzIG9mIGZvb3RzdGVwIHNvdW5kcyBhcmUgZW1pdHRlZCBiYXNlZCBvbiB0aGUgc3VyZmFjZSB0aGUgcGxheWVyIGlzIHN0YW5kaW5nIG9uLgoKQ2hhcmFjdGVyaXN0aWNzOgpkb2VzIG5vdCBjcm9zcyBjb2xsaXNpb25zCnVzZSBqb3lzdGljawpPbmx5IHVzZXMgc3dpcGVzIGlmIHdpdGhpbiBhIGRlZmluZWQgYXJlYSBvZiB0aGUgc2NyZWVuCkl0IGhhcyBhIHNsaWRpbmcgc3lzdGVtCldvbnQgdHJpcCwgZmFsbCwgb3ZlcnR1cm4gb3IgaGFuZyBhbnl3aGVyZQpIYXMgcm90YXRpb24gYW5nbGUgbGltaXQgb24gdmVydGljYWwgZmluZ2VyIHNsaWRlIGF4aXMgKGxvb2sgdXAgYW5kIGRvd24pCkFkdmFuY2VkIGp1bXAgZmVhdHVyZQoKRXh0cmFzOgpBIHdvcmxkIG9mIGV4YW1wbGUKVGhlIFVJIGNvbmZpZ3VyZWQgZm9yIHBsYXllciBjb250cm9s",
+      "tags": "afpp",
+      "version": 1,
+      "repositoryURL": "https://github.com/ITsMagic-Software/Package-AFPP",
+      "isTemplate": true,
+      "date": "02/02/2026",
+      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
+      "images": [
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg"
+      ],
+      "id": "9405b011-855a-4cbd-8264-a93e91b680b3",
+      "userName": "ITsMagic 22"
+    },
+    {
+      "titleB64": "Q2F2ZSBjaHVyY2ggKEhJR0ggR1JBUEhJQ1Mp",
+      "descriptionB64": "VW5kZXJncm91bmQgY2h1cmNoIHByb2plY3Qgd2l0aCBhbWF6aW5nIGdyYXBoY2lzLg==",
+      "tags": "graphics,afpp",
+      "version": 1,
+      "repositoryURL": "https://github.com/ITsMagic-Software/Package-CaveChurch",
+      "isTemplate": true,
+      "date": "02/02/2026",
+      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
+      "images": [
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
+      ],
+      "id": "f0fda940-257a-448d-be47-a8e90e807a5f",
+      "userName": "ITsMagic 22"
+    },
+    {
+      "titleB64": "QUNQIC0gRHJpZnQgY2Fy",
+      "descriptionB64": "RHJpZnQgY2FyIG1hZGUgdXNpbmcgQUNQ",
+      "tags": "acp",
+      "version": 1,
+      "repositoryURL": "https://github.com/ITsMagic-Software/Package-Drift-ACP",
+      "isTemplate": true,
+      "date": "02/02/2026",
+      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
+      "images": [
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
+      ],
+      "id": "08d46151-22bc-4749-af1a-44a8c485163d",
+      "userName": "ITsMagic 22"
+    },
+    {
       "titleB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHBhcmEgSXRzIE1hZ2ljIEVuZ2luZS4=",
       "descriptionB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHNpbXBsZXMgcGFyYSBJdHMgTWFnaWMgRW5naW5lLiBwb3NzdWkgc2lzdGVtYSBkZSBjb2xpc29lcyBzaW1wbGVzLHZhcmlhcyBjb25maWd1cmHDp29lcyBlIHVtIHNpc3RlbWEgZGUgZWRpdG9yLHBvc3N1aSBIT1dfVE9fVVNF",
       "tags": "cloth,mesh,physics,malha,pano,fisica",
@@ -20,77 +91,6 @@
       ],
       "id": "e2efc1e7-9d48-4d77-94b1-efe90b890048",
       "userName": "Vitg1"
-    },
-    {
-      "titleB64": "Q2FyIHBoeXNpY3MgLSBBQ1A=",
-      "descriptionB64": "QWR2YW5jZWQgY2FyIHBoeXNpY3M=",
-      "tags": "acp",
-      "version": 1,
-      "repositoryURL": "https://github.com/ITsMagic-Software/Package-ACP",
-      "isTemplate": true,
-      "date": "02/02/2026",
-      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
-      "images": [
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
-      ],
-      "id": "7df7230e-fd01-4eb1-9651-06075ebfbd0e",
-      "userName": "itsmagic"
-    },
-    {
-      "titleB64": "Rmlyc3QgcGVyc29uIHBsYXllciBwcm9qZWN0IChBRlBQKQ==",
-      "descriptionB64": "T2ZmaWNpYWwgYWR2YW5jZWQgZmlyc3QgcGVyc29uIHBsYXllcgoKSXQgaXMgYSBmdWxseSBjb25maWd1cmVkIGFuZCBmdW5jdGlvbmFsIHBsYXllci4KCkl0IGhhcyBhIGNvbnRyb2wgaW50ZXJmYWNlLgpBZHZhbmNlZCBmb290c3RlcCBzb3VuZHMgd2l0aCBmcmVxdWVuY3ksIHBpdGNoIGFuZCB2b2x1bWUgdmFyaWF0aW9uIGJhc2VkIG9uIHNwZWVkIGFuZCBzY2VuZSBzZXR0aW5ncy4KRGlmZmVyZW50IHR5cGVzIG9mIGZvb3RzdGVwIHNvdW5kcyBhcmUgZW1pdHRlZCBiYXNlZCBvbiB0aGUgc3VyZmFjZSB0aGUgcGxheWVyIGlzIHN0YW5kaW5nIG9uLgoKQ2hhcmFjdGVyaXN0aWNzOgpkb2VzIG5vdCBjcm9zcyBjb2xsaXNpb25zCnVzZSBqb3lzdGljawpPbmx5IHVzZXMgc3dpcGVzIGlmIHdpdGhpbiBhIGRlZmluZWQgYXJlYSBvZiB0aGUgc2NyZWVuCkl0IGhhcyBhIHNsaWRpbmcgc3lzdGVtCldvbnQgdHJpcCwgZmFsbCwgb3ZlcnR1cm4gb3IgaGFuZyBhbnl3aGVyZQpIYXMgcm90YXRpb24gYW5nbGUgbGltaXQgb24gdmVydGljYWwgZmluZ2VyIHNsaWRlIGF4aXMgKGxvb2sgdXAgYW5kIGRvd24pCkFkdmFuY2VkIGp1bXAgZmVhdHVyZQoKRXh0cmFzOgpBIHdvcmxkIG9mIGV4YW1wbGUKVGhlIFVJIGNvbmZpZ3VyZWQgZm9yIHBsYXllciBjb250cm9s",
-      "tags": "afpp",
-      "version": 1,
-      "repositoryURL": "https://github.com/ITsMagic-Software/Package-AFPP",
-      "isTemplate": true,
-      "date": "02/02/2026",
-      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
-      "images": [
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg"
-      ],
-      "id": "9405b011-855a-4cbd-8264-a93e91b680b3",
-      "userName": "itsmagic"
-    },
-    {
-      "titleB64": "Q2F2ZSBjaHVyY2ggKEhJR0ggR1JBUEhJQ1Mp",
-      "descriptionB64": "VW5kZXJncm91bmQgY2h1cmNoIHByb2plY3Qgd2l0aCBhbWF6aW5nIGdyYXBoY2lzLg==",
-      "tags": "graphics,afpp",
-      "version": 1,
-      "repositoryURL": "https://github.com/ITsMagic-Software/Package-CaveChurch",
-      "isTemplate": true,
-      "date": "02/02/2026",
-      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
-      "images": [
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
-      ],
-      "id": "f0fda940-257a-448d-be47-a8e90e807a5f",
-      "userName": "itsmagic"
-    },
-    {
-      "titleB64": "QUNQIC0gRHJpZnQgY2Fy",
-      "descriptionB64": "RHJpZnQgY2FyIG1hZGUgdXNpbmcgQUNQ",
-      "tags": "acp",
-      "version": 1,
-      "repositoryURL": "https://github.com/ITsMagic-Software/Package-Drift-ACP",
-      "isTemplate": true,
-      "date": "02/02/2026",
-      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
-      "images": [
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
-        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img4.jpg"
-      ],
-      "id": "08d46151-22bc-4749-af1a-44a8c485163d",
-      "userName": "itsmagic"
     }
   ]
 }
