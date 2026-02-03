@@ -206,6 +206,11 @@ def main() -> None:
                 f"({ _format_value(images) }) in {package_label}."
             )
         else:
+            if len(images) > 8:
+                errors.append(
+                    "ERROR: Too many images "
+                    f"(len={len(images)}, limit=8) in {package_label}."
+                )
             for image in images:
                 if not isinstance(image, str) or not image.strip():
                     errors.append(
