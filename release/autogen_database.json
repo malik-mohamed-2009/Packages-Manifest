@@ -1,6 +1,32 @@
 {
   "packages": [
     {
+<<<<<<< HEAD
+=======
+      "id": "a55acaff-056d-450b-94be-164d8b93825f",
+      "userName": "Vitg1",
+      "titleB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHBhcmEgSXRzIE1hZ2ljIEVuZ2luZS4=",
+      "descriptionB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHNpbXBsZXMgcGFyYSBJdHMgTWFnaWMgRW5naW5lLiBwb3NzdWkgc2lzdGVtYSBkZSBjb2xpc29lcyBzaW1wbGVzLHZhcmlhcyBjb25maWd1cmHDp29lcyBlIHVtIHNpc3RlbWEgZGUgZWRpdG9yLHBvc3N1aSBIT1dfVE9fVVNF",
+      "tags": "cloth,mesh,physics,malha,pano,fisica",
+      "version": 1,
+      "repositoryURL": "https://github.com/Vitg1/Mesh-Simulation-System-v1",
+      "isTemplate": false,
+      "date": "02/02/2026",
+      "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/capa.png",
+      "images": [
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img2.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img3.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img4.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img5.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img6.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img7.png",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/Vitg1/ClothSimulation-V1/img8.png"
+      ]
+    },
+    {
+      "id": "3c7b5dbc-35ac-44fd-9860-0f44e328c628",
+      "userName": "ITsMagic",
+>>>>>>> 3f09be967d728399f3d190584d39aa4fa2f407b8
       "titleB64": "Q2FyIHBoeXNpY3MgLSBBQ1A=",
       "descriptionB64": "QWR2YW5jZWQgY2FyIHBoeXNpY3M=",
       "tags": "acp",
@@ -63,6 +89,7 @@
       "date": "02/02/2026",
       "thumbnail": "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/thumb.jpg",
       "images": [
+<<<<<<< HEAD
         "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img1.jpg",
         "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img2.jpg",
         "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/img3.jpg",
@@ -91,6 +118,13 @@
       ],
       "id": "e2efc1e7-9d48-4d77-94b1-efe90b890048",
       "userName": "Vitg1"
+=======
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/itsmagic/drift-acp/img1.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/itsmagic/drift-acp/img2.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/itsmagic/drift-acp/img3.jpg",
+        "https://raw.githubusercontent.com/ITsMagic-Software/Packages-Manifest/refs/heads/main/packages/itsmagic/drift-acp/img4.jpg"
+      ]
+>>>>>>> 3f09be967d728399f3d190584d39aa4fa2f407b8
     }
   ]
 }
