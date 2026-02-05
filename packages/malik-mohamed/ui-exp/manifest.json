@@ -1,0 +1,15 @@
+{
+    "titleB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHBhcmEgSXRzIE1hZ2ljIEVuZ2luZS4=",
+    "descriptionB64": "U2lzdGVtYSBkZSBzaW11bGHDp8OjbyBkZSBwYW5vIHNpbXBsZXMgcGFyYSBJdHMgTWFnaWMgRW5naW5lLiBwb3NzdWkgc2lzdGVtYSBkZSBjb2xpc29lcyBzaW1wbGVzLHZhcmlhcyBjb25maWd1cmHDp29lcyBlIHVtIHNpc3RlbWEgZGUgZWRpdG9yLHBvc3N1aSBIT1dfVE9fVVNF",
+    "tags": "ui",
+    "version": 1,
+    "appMajorVersion": 2,
+    "repositoryURL": "https://github.com/malik-mohamed-2009/UI-examples",
+    "isTemplate": true,
+    "date": "07/02/2026",
+    "thumbnail": "thumb.png",
+    "images": [
+        "img1.png",
+        "img2.png"
+    ]
+}
