@@ -113,6 +113,71 @@ def _get_config(config_path: Path) -> dict:
     return config
 
 
+def _replace_ext_case_insensitive(value: str, old_ext: str, new_ext: str) -> str:
+    return re.sub(rf"(?i){re.escape(old_ext)}$", new_ext, value)
+
+
+def _normalize_media_entry(
+    manifest_dir: Path,
+    value: str,
+    package_label: str,
+    errors: list[str],
+) -> tuple[str, Path | None]:
+    normalized_value = value.strip()
+    resolved_value = normalized_value
+    resolved_path = manifest_dir / resolved_value
+
+    if not resolved_path.is_file() and normalized_value.lower().endswith(".jpg"):
+        jpeg_candidate = _replace_ext_case_insensitive(normalized_value, ".jpg", ".jpeg")
+        jpeg_path = manifest_dir / jpeg_candidate
+        if jpeg_path.is_file():
+            resolved_value = jpeg_candidate
+            resolved_path = jpeg_path
+
+    if not resolved_path.is_file() and normalized_value.lower().endswith(".jpeg"):
+        jpg_candidate = _replace_ext_case_insensitive(normalized_value, ".jpeg", ".jpg")
+        jpg_path = manifest_dir / jpg_candidate
+        if jpg_path.is_file():
+            resolved_value = jpg_candidate
+            resolved_path = jpg_path
+
+    if not resolved_path.is_file():
+        return normalized_value, None
+
+    if resolved_value.lower().endswith(".jpeg"):
+        target_value = _replace_ext_case_insensitive(resolved_value, ".jpeg", ".jpg")
+        source_path = resolved_path
+        target_path = manifest_dir / target_value
+
+        if target_path.exists():
+            try:
+                same_file = target_path.samefile(source_path)
+            except OSError:
+                same_file = False
+            if not same_file:
+                errors.append(
+                    "ERROR: Cannot rename media because target already exists "
+                    f"({ _format_value(resolved_value) } -> "
+                    f"{ _format_value(target_value) }) in {package_label}."
+                )
+                return resolved_value, source_path
+        elif source_path != target_path:
+            try:
+                source_path.rename(target_path)
+            except OSError as exc:
+                errors.append(
+                    "ERROR: Failed to rename media "
+                    f"({ _format_value(resolved_value) } -> "
+                    f"{ _format_value(target_value) }) in {package_label}: {exc}"
+                )
+                return resolved_value, source_path
+
+        resolved_value = target_value
+        resolved_path = target_path
+
+    return resolved_value, resolved_path
+
+
 def main() -> None:
     repo_root = Path(__file__).resolve().parents[2]
     packages_root = repo_root / "packages"
@@ -158,6 +223,7 @@ def main() -> None:
             continue
 
         manifest_dir = manifest_path.parent
+        manifest_changed = False
 
         id_path = manifest_path.parent / "autogen_id"
         package_id: str | None = None
@@ -194,8 +260,15 @@ def main() -> None:
                 f"({ _format_value(thumbnail) }) in {package_label}."
             )
         else:
-            thumbnail_path = manifest_dir / thumbnail
-            if not thumbnail_path.is_file():
+            normalized_thumbnail, thumbnail_path = _normalize_media_entry(
+                manifest_dir, thumbnail, package_label, errors
+            )
+            if normalized_thumbnail != thumbnail:
+                manifest["thumbnail"] = normalized_thumbnail
+                thumbnail = normalized_thumbnail
+                manifest_changed = True
+
+            if thumbnail_path is None or not thumbnail_path.is_file():
                 errors.append(
                     "ERROR: Thumbnail not found "
                     f"({ _format_value(thumbnail) }) in {package_label}."
@@ -228,15 +301,23 @@ def main() -> None:
                     f"(len={len(images)}, limit={images_max_count}) "
                     f"in {package_label}."
                 )
-            for image in images:
+            normalized_images_for_manifest = list(images)
+            for index, image in enumerate(images):
                 if not isinstance(image, str) or not image.strip():
                     errors.append(
                         "ERROR: Invalid image entry "
                         f"({ _format_value(image) }) in {package_label}."
                     )
                     continue
-                image_path = manifest_dir / image
-                if not image_path.is_file():
+                normalized_image, image_path = _normalize_media_entry(
+                    manifest_dir, image, package_label, errors
+                )
+                if normalized_image != image:
+                    normalized_images_for_manifest[index] = normalized_image
+                    image = normalized_image
+                    manifest_changed = True
+
+                if image_path is None or not image_path.is_file():
                     errors.append(
                         "ERROR: Image not found "
                         f"({ _format_value(image) }) in {package_label}."
@@ -255,6 +336,9 @@ def main() -> None:
                             "ERROR: Failed to stat image "
                             f"({ _format_value(image) }) in {package_label}: {exc}"
                         )
+            if normalized_images_for_manifest != images:
+                manifest["images"] = normalized_images_for_manifest
+                images = normalized_images_for_manifest
 
         repository_url = manifest.get("repositoryURL")
         if not isinstance(repository_url, str) or not repository_url.strip():
@@ -355,6 +439,14 @@ def main() -> None:
                 "ERROR: appMajorVersion must be 1 or 2 "
                 f"({ _format_value(app_major_version) }) in {package_label}."
             )
+
+        if manifest_changed:
+            try:
+                with manifest_path.open("w", encoding="utf-8") as handle:
+                    json.dump(manifest, handle, indent=4, ensure_ascii=False)
+                    handle.write("\n")
+            except OSError as exc:
+                errors.append(f"ERROR: Failed to write {package_label}: {exc}")
 
         updated_manifest = dict(manifest)
         updated_manifest["id"] = package_id
